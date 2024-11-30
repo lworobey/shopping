@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Page</title>
+    <h1>Product Page</h1>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="search-container">
+      <input type="text" id="searchBar" placeholder="Search for products..." />
+      <select id="sortDropdown">
+        <option value="">Sort by</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+        <option value="name-asc">Name: A to Z</option>
+        <option value="name-desc">Name: Z to A</option>
+      </select>
+      <select id="categoryDropdown">
+        <option value="">Show all categories</option>
+        <option value="Clothing">Clothing</option>
+        <option value="Sports">Sports</option>
+        <option value="Gift Cards">Gift Cards</option>
+        <option value="School Supplies">School Supplies</option>
+        <option value="Food">Food</option>
+        <option value="Phone">Phone</option>
+      </select>
+    </div>
+    
+    <div class="product-container">
+      <div class="product-card">
+        <img
+          src="https://img.freepik.com/free-vector/white-realistic-t-shirt-isolated-front-back_78370-1307.jpg"
+          alt="White T-shirt"
+        />
+        <h3>White T-shirt</h3>
+        <p class="price">$10.00</p>
+        <p class="category" data-category="Clothing">Category: <span class="category-name">Clothing</span></p>
+      </div>
+      <div class="product-card">
+        <img
+          src="https://img.freepik.com/free-photo/basketball-ball-black-background_93675-134417.jpg"
+          alt="Basketball"
+        />
+        <h3>Basketball</h3>
+        <p class="price">$15.00</p>
+        <p class="category" data-category="Sports">Category: <span class="category-name">Sports</span></p>
+      </div>
+      <div class="product-card">
+        <img
+          src="https://img.freepik.com/free-photo/detailed-soccer-ball-football-icon-isolated_268835-1351.jpg?ga=GA1.1.2014865635.1732986419&semt=ais_hybrid"
+          alt="Soccer Ball"
+        />
+        <h3>Soccer Ball</h3>
+        <p class="price">$15.00</p>
+        <p class="category" data-category="Sports">Category: <span class="category-name">Sports</span></p>
+      </div>
+      <div class="product-card">
+        <img
+          src="https://img.freepik.com/free-vector/gift-card-with-red-ribbon_23-2147508768.jpg"
+          alt="Gift Card"
+        />
+        <h3>Visa Gift Card</h3>
+        <p class="price" data-min="20" data-max="500">$20.00 - $500.00</p>
+        <p class="category" data-category="Gift Cards">Category: <span class="category-name">Gift Cards</span></p>
+      </div>
+      <div class="product-card">
+        <img
+          src="https://img.freepik.com/free-photo/school-blackboard_1048-4547.jpg"
+          alt="Chalk Board"
+        />
+        <h3>Chalk Board</h3>
+        <p class="price">$12.00</p>
+        <p class="category" data-category="School Supplies">Category: <span class="category-name">School Supplies</span></p>
+      </div>
+      <div class="product-card">
+        <img
+          src="https://img.freepik.com/free-photo/blank-spiral-notepad-pencil-wood-background_1373-114.jpg"
+          alt="Spiral Notepad"
+        />
+        <h3>Spiral Notepad</h3>
+        <p class="price">$5.00</p>
+        <p class="category" data-category="School Supplies">Category: <span class="category-name">School Supplies</span></p>
+      </div>
+      <div class="product-card">
+        <img
+          src="https://img.freepik.com/free-photo/two-red-apples-isolated-white_114579-73124.jpg"
+          alt="Apple"
+        />
+        <h3>Apple</h3>
+        <p class="price">$1.00</p>
+        <p class="category" data-category="Food">Category: <span class="category-name">Food</span></p>
+      </div>
+      <div class="product-card">
+        <img
+          src="https://img.freepik.com/free-photo/retro-phone_144627-11898.jpg?ga=GA1.1.2014865635.1732986419&semt=ais_hybrid"
+          alt="Rotary Phone"
+        />
+        <h3>Rotary Phone</h3>
+        <p class="price">$40.00</p>
+        <p class="category" data-category="Phone">Category: <span class="category-name">Phone</span></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+  <footer>
+    <p>
+      Images by
+      <a
+        href="https://www.freepik.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Freepik</a
+      >
+    </p>
+  </footer>
+</html>

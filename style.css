@@ -1,0 +1,22 @@
+.product-card img {
+    width: 400px;
+    height: 400px;
+}  
+.product-card {
+    margin: 50px;
+    border: 1px solid blue;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 20px;
+}
+select, input {
+  display: inline;
+}
+.price{
+    color: #01ad01;
+}
